@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+<title id="title">ScopeReceipt: partial reads fail, complete text coverage passes</title>
+<desc id="desc">Actual CLI demo with synthetic fixtures. Two of six lines: incomplete. Six of six: complete. Does not prove understanding.</desc>
+<rect width="960" height="440" rx="20" fill="#0c141f"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="32" y="51" fill="#f0f5fc" font-size="29" font-weight="700">ScopeReceipt</text>
+<text x="32" y="86" fill="#a7b6ca" font-size="18">Your AI says it read everything. Ask for the receipt.</text>
+<rect x="32" y="122" width="438" height="246" rx="16" fill="#162231"/>
+<text x="56" y="157" fill="#a7b6ca" font-size="13">01  PARTIAL READ</text>
+<text x="56" y="199" fill="#fbad63" font-size="29" font-weight="700">INCOMPLETE</text>
+<text x="56" y="224" fill="#a7b6ca" font-size="14">2/6 text lines emitted</text>
+<text x="56" y="255" fill="#cad5e2" font-size="15">contract.txt<tspan x="354">2/3</tspan></text><text x="56" y="301" fill="#cad5e2" font-size="15">notes.md<tspan x="354">0/3</tspan></text>
+<text x="56" y="341" fill="#fbad63" font-size="14">strict check: exit 1</text><rect x="490" y="122" width="438" height="246" rx="16" fill="#162231"/>
+<text x="514" y="157" fill="#a7b6ca" font-size="13">02  REMAINING TEXT READ</text>
+<text x="514" y="199" fill="#6ee7b7" font-size="29" font-weight="700">COMPLETE</text>
+<text x="514" y="224" fill="#a7b6ca" font-size="14">6/6 text lines emitted</text>
+<text x="514" y="255" fill="#cad5e2" font-size="15">contract.txt<tspan x="812">3/3</tspan></text><text x="514" y="301" fill="#cad5e2" font-size="15">notes.md<tspan x="812">3/3</tspan></text>
+<text x="514" y="341" fill="#6ee7b7" font-size="14">strict check: exit 0</text>
+<text x="32" y="408" fill="#a7b6ca" font-size="14">Real CLI output · Synthetic documents · Access coverage is not understanding</text>
+</g></svg>

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scopereceipt"
+version = "0.2.0"
+description = "Your AI says it read every file. Verify its observable reading coverage."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "ScopeReceipt Contributors"}]
+keywords = ["ai-agents", "document-analysis", "verification", "mcp", "provenance"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent"]
+
+[project.optional-dependencies]
+pdf = ["PyMuPDF>=1.24"]
+
+[project.scripts]
+scopereceipt = "scopereceipt.cli:main"
+scopereceipt-mcp = "scopereceipt.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["scopereceipt*"]
